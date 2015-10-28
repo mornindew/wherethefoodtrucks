@@ -1,0 +1,25 @@
+{
+  "name": "wherethefoodtrucks",
+  "version": "1.0.0",
+  "description": "where are the food trucks anyway?",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mornindew/wherethefoodtrucks.git"
+  },
+  "keywords": [
+    "food"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mornindew/wherethefoodtrucks/issues"
+  },
+  "homepage": "https://github.com/mornindew/wherethefoodtrucks",
+  "dependencies": {
+    "express": "^4.13.3"
+  }
+}
