@@ -1,0 +1,88 @@
+#contactInfo
+	line-height : 0.95
+	//visibility : hidden
+	@extend .dropShadow_sml 
+	position: fixed
+	top     : 19px
+	left    : 0px
+	z-index : 1000
+	width: 100%
+	padding-top : $padding_off
+	height: $contactInfo_Height
+	text-align: center
+	
+
+	color: #FFFFC2
+
+	background-image:  $backgroundIMG_1
+	background-repeat: $backgroundIMG_repeat
+
+.experienceString
+	padding-top: $padding_med
+	font-size : 10px
+	font-style: italic
+	
+.contact_avatar
+	@extend .dropShadow_sml 
+	position: absolute
+	z-index : 700
+	left: 0px
+	top : 1px
+
+.contact_UserName
+	margin-left: $avatar_width
+	margin-top: $padding_lrg
+	padding-top : $padding_med
+	font-size : $fontSize_lrg
+	line-height: $lineHeight_med
+
+.contact_JobTitle
+	margin-top: $padding_med
+	margin-left: $avatar_width
+	padding-top : $padding_med
+	font-size : $fontSize_lrg
+	line-height: $lineHeight_med
+
+.contact_geoLocation
+	font-size : $fontSize_med
+	padding-top : $padding_sml2
+	line-height : $lineHeight_sml
+	margin-left: $avatar_width
+
+.contact_AppTitle
+	font-size : $fontSize_med
+	padding-top : $padding_med
+	line-height : $lineHeight_sml
+	margin-left: $avatar_width
+
+/// SECOND ROW..
+.contactSecondRow
+	padding-top : 10px
+@media (min-width: 10px) and (max-width: 960px)
+	.contactSecondRow
+		padding-top : 0px
+
+@media (min-width: 10px) and (max-width: 700px)
+	.contact_JobTitle
+		font-size : $fontSize_med
+	.contact_UserName
+		font-size : $fontSize_sml
+	.contact_geoLocation
+		font-size : $fontSize_sml
+	.contact_AppTitle
+		font-size : $fontSize_sml
+	.contactSecondRow
+		padding-top : 0px
+
+.contact_email
+	font-size : $fontSize_sml
+	padding-top : $padding_med
+	line-height : $lineHeight_sml
+	margin-left: $avatar_width
+	font-style : italic
+
+
+#contactInfo a
+	color: #FFF
+
+

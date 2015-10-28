@@ -1,0 +1,60 @@
+.partialView_Wrapper
+	.parialView_PageTitle.
+		<i class='fa fa-graduation-cap pageTitleIcon'></i>  
+		<span class='hideOnMobile'>&nbsp;</span>
+		Education
+		<span class='hideOnMobile'>&nbsp;</span>
+		<i class='fa fa-graduation-cap pageTitleIcon'></i>  
+	
+	.container
+		.container.educationItem_ROW
+			.col-xs-12
+				.Italics.
+					“Education is the kindling of a flame, not the filling of a vessel.” ~Socrates
+
+		for edu_item in education
+			/// EDUCATION TITLE ROW..
+			.container.educationItem_ROW.educationItem_titleROW
+				.col-xs-7.col-sm-4.col-sm-offset-2
+					.educationItem_TITLE.
+						#{edu_item.school}
+				.col-xs-5.col-sm-6
+					.educationItem_ICON
+						img(src='https://s3-us-west-1.amazonaws.com/adeptpro/Resume/#{edu_item.icon}', title='#{edu_item.school}', alt='#{edu_item.school}')
+			
+			/// EDUCATION DURATION / Location
+			.container.educationItem_ROW
+				.col-xs-6.col-sm-6.edu_basicInfoItem.
+					#{edu_item.duration}
+				.col-xs-6.col-sm-6.edu_basicInfoItem.
+					#{edu_item.location}
+
+				.col-xs-12
+					hr
+
+				.col-xs-12
+					.container
+					/// Loop through Topics Studied At School
+					for ss in edu_item.areaOfStudy
+						.col-xs-6.col-sm-6.col-md-4
+							button.btn-block.buttonMargins.hvr-shutter-in-vertical.
+								#{ss}
+
+			//// EDUCATION IMAGES  THUMBNAILS..
+			if edu_item.images[0]
+				.container.educationItem_ROW
+					.col-md-1
+					for thisImage in edu_item.images
+						.col-md-2.col-sm-3.col-xs-6
+							img(src='https://s3-us-west-1.amazonaws.com/adeptpro/Resume/#{thisImage.src}', title='#{thisImage.description}', alt='#{thisImage.description}', data-toggle="tooltip", data-placement="auto right").imageThumb
+							//- .imageThumb
+		
+			////  Extra Education Item infomation..
+			if edu_item.extra[0]	
+				.container.educationItem_ROW
+					.col-sm-12
+						.container
+							for extraItem in edu_item.extra
+								.col-xs-6.col-sm-6.col-md-6
+									button.btn-block.buttonMargins.hvr-shutter-in-vertical.
+										#{extraItem}

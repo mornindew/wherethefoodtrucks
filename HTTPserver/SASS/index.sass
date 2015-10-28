@@ -1,0 +1,57 @@
+
+//// VARIABLES  for STYLE SHEETS>.    
+@import 'Variables_SASS'
+@import 'CSS_Reset'
+@import 'Generic_CSS_Classes'
+
+
+
+////// HEADER  WIDGET.. 
+@import 'HeaderStyle'
+////// BODY  WIDGET.. 
+@import 'BodyStyle'
+////// FOOTER  WIDGET.. 
+@import 'FooterStyle'
+
+
+//////////////////////////////////////////
+////// Contact Information .. 
+@import 'ContactInfo_Style'
+/////  NAVIGATION
+@import 'Navigation_Style'
+
+/////  Public Github Projects Page
+@import 'github_Projects_Style'
+
+
+///////////////////////////
+@import "bootstap_Modals"
+//////////////////////////
+@import "tablePresentation"
+////////////////////////////
+@import "Education"
+////////////////////////////
+@import "techSkills"
+
+
+
+//// Nested Partial Wrappers..
+.videoList_nestedWrapper
+	@extend .dropShadow_sml
+	background-color : #000
+	background : #000
+#techSkills_wrapper
+	position : absolute
+
+	background : #FF0000
+	border : 3px solid #FFFFE0
+
+
+/////// SKILL  ITEM 
+.skillItem
+	font-size : $fontSize_med
+	height : 23px
+@media (min-width : 10px) and (max-width : 800px)
+	.skillItem	
+		font-size : $fontSize_sml2
+		height : 23px	

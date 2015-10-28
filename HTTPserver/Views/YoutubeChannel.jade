@@ -1,0 +1,51 @@
+//-
+	"Main Shell for the Single Page Application"
+
+doctype html
+html(lang="en")
+	//- HTML HEAD TAG
+	include partials/HEAD_tag
+
+	body.noSpacing
+
+		//- BOOTSTRAP MODALS / Popups.
+		include partials/BOOTSTAP_MODALS
+
+		//- "HEADER  ..."
+		include partials/header
+		
+		//- " MAIN BODY CONTAINER.."
+		.staticTopContainer.noSpacing.dropShadow_sml
+			
+			//- Non-Scrolling Contact Information
+			include partials/Resume/contactInfomation
+
+			#lucentBodyScroller
+				//- GITHUB PROJECTS
+					include partials/Resume/Pages/githubProjects
+				
+				//- EDUCATION
+					include partials/Resume/Pages/education
+				
+				//- TECH SKILLLS 
+					include partials/Resume/Pages/techSkills
+
+				//- PAST WORK EXPERIENCE
+					include partials/Resume/Pages/workExp
+
+				//- YOUTUBE VIDEOS  
+				include partials/Resume/Pages/youtubeTuts
+
+				//- FOOTER ADS
+				include partials/Resume/Pages/ADVERTS
+
+
+		//- " FOOTER FOR S.P.A.  "
+		include partials/footer
+		
+		
+
+
+
+
+

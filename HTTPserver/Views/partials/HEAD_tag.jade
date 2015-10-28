@@ -1,0 +1,89 @@
+head
+	title="Hire Brent Linhardt"
+	meta(name='viewport', content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no")
+
+	meta(name="description", content="Hire Brent Linhardt for a Software Engineering Position.")
+
+	meta(name='meta-keywords', content="Javascript, NodeJS, Software Engineering")
+	
+	// JQUERY UI theme   
+	link(href='js/Vendor/jquery-ui.min.css', rel='stylesheet')
+	link(href='js/Vendor/jquery-ui-theme.css', rel='stylesheet')
+	
+	// Normalize & Rendered .SASS file 
+	link(href='css/normalize.css', rel='stylesheet')
+	link(href='css/font-awesome.css', rel='stylesheet')
+	link(href='css/hireBrent33.css', rel='stylesheet')
+
+	// WebCamera
+	script(href='js/Vendor/webcamJS/webcam.js', type='text/javascript')
+	// Sweet Alert
+	script(src="js/Vendor/sweetAlert/sweetalert-dev.js", type="text/javascript")
+	link(href="js/Vendor/sweetAlert/sweetalert.css", rel="stylesheet", type="text/css")
+
+	// Boot Strap  CSS
+	link(href='js/Vendor/bootstrap.css', rel='stylesheet')
+	link(href='js/Vendor/bootstrap-theme.css', rel='stylesheet')
+	link(href='css/hover.css', rel='stylesheet')
+
+	// CSS Class_Widget Styles
+	link(href='css/Class_Widget_animations.css', rel='stylesheet')
+	link(href='css/Class_Widget.css', rel='stylesheet')
+	
+	// chartJS
+	script(type='text/javascript', src="/js/Vendor/Chart.js")
+	// JQUERY & Plugins && bootstrap.js
+	
+	script(type='text/javascript', src="//localhost:35729/livereload.js")
+	script(type='text/javascript', src="/js/Vendor/jquery.js")
+	script(type='text/javascript', src="/js/Vendor/jqueryUI.js")
+	script(type='text/javascript', src="/js/Vendor/jquery.transit.js")
+	script(type='text/javascript', src="/js/Vendor/jquery.fitText.js")
+	script(type='text/javascript', src="/js/Vendor/bootstrap.js")
+	script(type='text/javascript', src="/js/Vendor/hammer.js")
+	script(type='text/javascript', src="/js/Vendor/responsiveVoice.js")
+	
+	script(type='text/javascript', src="/socket.io/socket.io.js")
+	//// GUI CLASSES  
+	script(type='text/javascript', src="/js/Class_Widget.js")
+	script(type='text/javascript', src="/js/Class_Accordion.js")
+	script(type='text/javascript', src="/js/Class_Graph.js")
+	
+
+	script(type='text/javascript', src="/js/tools.js")
+	script(type='text/javascript', src="/js/main.js")
+	script(type='text/javascript').
+		var socket = io();
+
+	// Facebook Script
+	script(type='text/javascript').
+		window.fbAsyncInit = function() {
+			FB.init({
+				appId      : '724975360968874',
+				xfbml      : true,
+				version    : 'v2.4'
+			});
+		};
+		(function(d, s, id){
+		 var js, fjs = d.getElementsByTagName(s)[0];
+		 if (d.getElementById(id)) {return;}
+		 js = d.createElement(s); js.id = id;
+		 js.src = "https://connect.facebook.net/en_US/sdk.js";
+		 fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));
+
+	// GOOGLE ANALYTICS
+	script(type='text/javascript').
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-57329516-1', 'auto');
+		ga('send', 'pageview');
+
+	/// GOOGLE ADSENSE
+	<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+	// Done with </HEAD>
+	

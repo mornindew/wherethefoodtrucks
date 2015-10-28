@@ -1,0 +1,35 @@
+.partialView_Wrapper
+	.parialView_PageTitle.
+		<i class='fa fa-bolt'></i>  
+		&nbsp;
+		<span class='hideOnMobile'>Development</span> Skills	
+		&nbsp;
+		<i class='fa fa-bolt'></i>  
+		
+	.container
+		.container.educationItem_ROW
+			.col-xs-4
+				.devSkills_titleItem.
+					<i class="fa fa-terminal"></i> 
+					Expertise
+			.col-xs-4
+				.devSkills_titleItem.
+					<i class="fa fa-star"></i> 
+					Passion
+			.col-xs-4
+				.devSkills_titleItem.
+					<i class="fa fa-user"></i> 
+					Professional<br/>
+
+			.col-sm-12
+				hr
+			.col-sm-12
+				.indentParagraph Brent Linhardt, is a full stack developer, who has a wide spectrum of creative, technical, and professional skills. He has an extensive knowledge, of modern and promising technologies. Championing the archetype, for a resolution-focused, team oriented, scrum project manager, Brent is a valuable and cost-effective asset. Able to fill a role, as a leader or as part of your potential engineering team, Brent will deliver from concept to market.
+			
+			.container
+			hr
+			for skill in skills
+				.col-xs-6.col-sm-6.col-md-3.col-lg-3
+					button.btn-block.buttonMargins.hvr-shutter-in-vertical.skillItem(alt='#{skill.description}').
+						#{skill.name}
+

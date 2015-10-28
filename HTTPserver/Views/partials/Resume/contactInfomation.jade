@@ -1,0 +1,28 @@
+#contactInfo.dropShadow_down
+	img(src="https://s3-us-west-1.amazonaws.com/adeptpro/Resume#{avatarSRC}", title="Full Stack Software Engineer", alt="Full Stack Software Engineer", data-toggle="tooltip", data-placement="auto right").contact_avatar
+	
+	include ../navigation
+
+	.container
+		.col-sm-5.col-md-7
+			.contact_UserName.
+				#{fname} #{lname} 
+		
+		.col-sm-7.col-md-5
+			.contact_JobTitle.
+				#{userJobTitle} 
+	
+	.container.contactSecondRow
+		.col-sm-7.col-md-7
+			.contact_geoLocation.
+				#{generalLocation}
+		.col-sm-5.col-md-5
+			.contact_email
+				a(href='mailto:adeptPro33@gmail.com?Subject=From%20Adept%20Pro%20Web%20App', target='_top'). 
+					#{email}
+	
+	.container
+		.col-xs-12.col-md-12
+			.contact_AppTitle.
+				#{AppTitle}		 
+

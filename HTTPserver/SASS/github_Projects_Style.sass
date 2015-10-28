@@ -1,0 +1,67 @@
+$gitHubIMGSIZE : 127px
+$gitHubIMGSIZE_offset : 136px
+$gitHub_Padding : $padding_med
+$gitHub_RepoItem_Margin : 55px
+
+
+.githubProfile_wrapper
+	opacity : 0
+
+.gitHubProject_Item
+	margin-top : 3px
+	border : 1px solid black
+	margin-left : $gitHub_RepoItem_Margin
+	margin-right : $gitHub_RepoItem_Margin
+
+.gitHubProject_Title
+	font-size : 22px
+	text-decoration : underline
+
+.gitHubProject_Descr
+	text-indent : $gitHubIMGSIZE_offset
+	text-align : left
+
+
+.gitHubProfile
+	// background : #F00
+	height : $gitHubIMGSIZE_offset
+
+
+.gitHubInfoTable_Wrapper
+	//background : #0F0
+	margin-right : $gitHubIMGSIZE_offset
+	margin-left : $gitHub_Padding
+
+
+.github_Avatar_wrapper img
+	@extend .dropShadow_sml
+	width : $gitHubIMGSIZE
+	height : auto
+
+.gitHubTable_key
+	text-decoration : underline
+	text-align : right
+.gitHubTable_value
+	font-style : italic
+	text-align : left
+
+.gitHub_MainIcon
+	position : absolute
+	z-index : 700
+	top : 10px
+	left : 0px
+	font-size : 177px
+@media (min-width: 10px) and (max-width: 900px)
+	.gitHub_MainIcon
+		position : absolute
+		z-index : 700
+		top : -20px
+		left : -18px
+		font-size : 55px
+
+
+@media (min-width: 10px) and (max-width: 950px)
+	.githubProfileImg
+		margin-top : 15px
+	.githubWelcomeMSG
+		font-size : 11px

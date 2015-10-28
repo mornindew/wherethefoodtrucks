@@ -1,0 +1,14 @@
+#lucentHeader.centerText.dropShadow_sml
+
+	#socialLinks
+		//- span Contact #{fname} #{lname}
+		for item in externalLinks
+			a(href='#{item.url}', alt='#{item.description}', target='_blank')
+				button(title='#{item.description}', data-toggle="tooltip", data-placement="right")
+					img(src='https://s3-us-west-1.amazonaws.com/adeptpro/Resume/#{item.iconSRC}')
+	
+
+						
+	#facebookBtn_wrapper
+		.fb-like(data-share='true',data-layout='button',data-show-faces="false")
+				

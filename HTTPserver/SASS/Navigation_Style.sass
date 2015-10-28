@@ -1,0 +1,37 @@
+.ResumeNavigation
+	text-shadow: $textShadow_sml
+	@extend .dropShadow_sml 
+	background-image: $backgroundIMG_2  // Metal Background 
+	background-repeat: $backgroundIMG_repeat
+	width: 100%
+
+	position : absolute
+	z-index  : 650
+	left     :  0px
+	bottom   : 0px
+	border-bottom : $borderStyle_sml
+
+.naviWrapper
+	height : $navigationHeight
+	margin-left: $avatar_width
+.resumeNaviItem
+	text-decoration: underline
+	font-size : 10px
+	color : rgb(255, 255, 194)
+
+@media (min-width: 10px) and (max-width: 366px)
+	.naviWrapper .fa
+		font-size : 8px
+
+.naviWrapper a
+	float : left
+
+.naviWrapper i
+	font-size : 23px
+	margin : 0px
+	padding : 0px
+@media (min-width: 10px) and (max-width: 660px)
+	.naviWrapper i
+		font-size : 11px
+		margin : 0px
+		padding : 0px
