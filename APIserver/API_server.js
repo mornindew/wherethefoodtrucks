@@ -2,7 +2,7 @@
 // curl --data "param1=value1&param2=value2" http://hostname/resource
 "use strict";
 
-let api_PORT = 1337;
+let api_PORT = 1338;
 
 let express = require("express");
 let mongoose = require("mongoose");
@@ -11,8 +11,6 @@ let methodOverride = require("method-override");
 let _ = require("lodash");
 
 let path = require("path");
-let tools = require("../server/Tools_nodeJS_server.js");
-	tools.readFile("API_Server/testFile.txt");
 
 
 let app = express();

@@ -8,3 +8,19 @@ By the food Truck App Team...
 * HTTP Server
 * Scrapers
 * Update && De-Duplicate.. 
+
+## Micro-Service Ports
+* HTTP server - 1337
+* API server - 1338
+
+## API Server
+* API Server Port == 1338
+* located in folder  ./APIserver/
+
+## HTTP Server
+* HTTP Server Port == 1337
+* located in folder  ./HTTPserver/
+
+
+## Requirements
+* per micro service..
